@@ -1,8 +1,11 @@
-class Actions:
-    def plus(self, a, b):
-        z = a + b
-        return z
+from helpers.request import data, request_post
 
-    def minus(self, a, b):
-        z = a - b
-        return z
+
+def plus(a, b):
+    response = request_post(json=data(a, '+', b)).json()['result']
+    return response
+
+
+def minus(a, b):
+    z = a - b
+    return z
