@@ -7,5 +7,5 @@ def plus(a, b):
 
 
 def minus(a, b):
-    z = a - b
-    return z
+    response = request_post(json=data(a, '-', b)).json()['result']
+    return response
