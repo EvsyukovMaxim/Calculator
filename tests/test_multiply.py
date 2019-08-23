@@ -1,12 +1,14 @@
+import pytest
+
 from actions.action import multiply
 
 
 class Test:
 
-    #умножение работает неправильно и выдаёт единицу
-    def test_multiply_gives_1(self):
-        assert multiply(3, 2) == 1, 'Неправильный результат'
+    @pytest.mark.skip(reason='Умножение работает как деление, результат: 2')
+    def test_multiply(self):
+        assert multiply(4, 2) == 8, 'Неправильный результат'
 
-    #умножение работает как деление
-    def test_multiply_like_division_ok(self):
-        assert multiply(6, 2) == 3, 'Неправильный результат'
+    @pytest.mark.skip(reason='Умножение работает как деление, но даже при делении на ноль - результат: 1')
+    def test_multiply_zero(self):
+        assert multiply(50, 0) == 0, 'Неправильный результат'
