@@ -1,4 +1,4 @@
-* Install  Мас OS:
+* Install Мас OS:
 
 brew install python3
 
@@ -16,11 +16,12 @@ pytest /tests
 
 
 
-* Install Ubuntu:
+* Install Linux:
 
 sudo apt-get install python3
 
-sudo apt-get install python3-venv # install virtualenv for Debian/Ubuntu systems
+
+sudo apt-get install python3-venv # install virtualenv for Debian/Linux systems
 
 python3 -m venv ~/py3env  # create virtualenv
 
@@ -31,6 +32,24 @@ sudo apt-get install python3-pip
 (sudo)pip install -r requirements.txt
 
 
-* Launch Ubuntu:
+* Launch Linux:
 
 pytest tests/
+
+
+
+* Install Windows:
+
+[Download latest version of Python](https://www.python.org/downloads/)
+
+
+python -m venv venv/py3env  # create virtualenv
+
+`<venv>`/Sripts/activate  # activate virtualenv, where `<venv>` is full path to your Project
+
+pip install -r requirements.txt
+ 
+
+* Launch Windows:
+
+pytest tests
