@@ -4,27 +4,33 @@ brew install python3
 
 
 python3 -m venv ~/py3env  # create virtualenv
+
 . ~/py3env/bin/activate  # activate virtualenv
 
 (sudo)pip3 install -r requirements.txt
 
-* Launch
+
+* Launch Мас OS:
+
 pytest /tests
-pytest --html=report.html /tests # for creating report file
 
 
-* Install Ubuntu
+
+* Install Ubuntu:
 
 sudo apt-get install python3
 
-
 sudo apt-get install python3-venv # install virtualenv for Debian/Ubuntu systems
+
 python3 -m venv ~/py3env  # create virtualenv
+
 . ~/py3env/bin/activate  # activate virtualenv
 
 sudo apt-get install python3-pip
+
 (sudo)pip install -r requirements.txt
 
-* Launch
+
+* Launch Ubuntu:
+
 pytest tests/
-pytest --html=report.html tests/ # for creating report file
