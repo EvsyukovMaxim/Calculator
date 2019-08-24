@@ -1,10 +1,13 @@
 import requests
 
-from helpers.config import api_url
+from config import api_url
 
 
 def data(left_operand, operation, right_operand):
-    json_data = {"left_operand": left_operand, "operation": operation, "right_operand": right_operand}
+    json_data = {
+        "left_operand": left_operand, "operation": operation,
+        "right_operand": right_operand
+    }
     return json_data
 
 
